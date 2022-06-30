@@ -1,2 +1,0 @@
-License holder
-Hash sha256

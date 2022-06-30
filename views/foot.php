@@ -5,7 +5,11 @@ $g = $host.$generate_url;
 				<footer class="centre">
 					<? if ($view != "logout"): ?>
 						<a class="button" href="<? echo $admin_path; ?>info">INFO</a>
+						<?php if (count($uu->urls) > 1): ?>
 						<a class="button" href="<? echo $admin_path."report/".$uu->urls(); ?>" target="_blank">GENERATE</a>
+						<?php else: ?>
+						<span class="button" href="<? echo $admin_path."report/".$uu->urls(); ?>" target="_blank">GENERATE</span>
+						<?php endif; ?>
 						<?php if ($user != 'guest'): ?>
 							<a class="button" href="<? echo $admin_path; ?>settings">SETTINGS</a>
 						<?php endif; ?>

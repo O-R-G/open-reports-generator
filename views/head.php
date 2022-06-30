@@ -4,8 +4,8 @@ $config_dir = __DIR__."/../config/";
 require_once($config_dir."config.php");
 
 // specific to this 'app'
-require_once($config_dir."url.php");
-require_once($config_dir."request.php");
+require_once($config_dir."../open-records-generator/config/url.php");
+require_once($config_dir."../open-records-generator/config/request.php");
 require_once($config_dir."org-settings.php");
 
 // logged in user via .htaccess, .htpasswd
