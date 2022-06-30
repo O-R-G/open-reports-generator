@@ -13,18 +13,18 @@
 
 // get environment variables
 date_default_timezone_set('America/New_York');
-$db_name = "open-records-generator";
+$db_name = "open-reports-generator";
 $host = "//".$_SERVER["HTTP_HOST"]."/";
 $root = $_SERVER["DOCUMENT_ROOT"]."/";
-$admin_path = $host . "open-records-generator/";
-$admin_root = $root . "open-records-generator/";
+$admin_path = $host . "open-reports-generator/";
+$admin_root = $root . "open-reports-generator/";
 $adminURLString = getenv("MYSQL_FULL_DATABASE_URL");
 $readWriteURLString = getenv("MYSQL_RW_DATABASE_URL");
 $readOnlyURLString = getenv("MYSQL_R_DATABASE_URL");
 $media_path = $host . "media/"; // don't forget to set permissions on this folder
 $media_root = $root . "media/";
-$models_root = $admin_root . "models/";
-$lib_root = $admin_root . "lib/";
+$models_root = $admin_root . "open-records-generator/models/";
+$lib_root = $admin_root . "open-records-generator/lib/";
 
 require_once($models_root."model.php");
 require_once($models_root."objects.php");

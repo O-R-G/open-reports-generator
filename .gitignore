@@ -1,3 +1,6 @@
 .htaccess
 config/config.php
 *-keep*
+settings.store
+vendor/
+license.txt
