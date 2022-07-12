@@ -6,7 +6,7 @@ require_once("views/head.php");
 // (should definitely be somewhere else)
 // else is for backwards compatibility (maybe not necessary?)
 if($view){
-	if($view == 'report' || $view == 'info' || $view == 'cover')
+	if($view == 'report' || $view == 'info' || $view == 'cover' || $view == 'browse')
 		$view_path = "views/".$view.".php";
 	else
 		$view_path = "open-records-generator/views/".$view.".php";
