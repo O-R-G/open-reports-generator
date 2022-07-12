@@ -4,11 +4,11 @@
     use environment variables
     set in server block directive, read via php
     apache:
-    SetEnv MYSQL_R_DATABASE_URL mysql2://user:pass@host/database
-    SetEnv MYSQL_RW_DATABASE_URL mysql2://user:pass@host/database
+    SetEnv MYSQL_R_SUBSCRIPTION_URL mysql2://user:pass@host/database
+    SetEnv MYSQL_RW_SUBSCRIPTION_URL mysql2://user:pass@host/database
     nginx:
-    fastcgi_param   MYSQL_R_DATABASE_URL mysql2://user:pass@host/database;
-    fastcgi_param   MYSQL_RW_DATABASE_URL mysql2://user:pass@host/database;
+    fastcgi_param   MYSQL_R_SUBSCRIPTION_URL mysql2://user:pass@host/database;
+    fastcgi_param   MYSQL_RW_SUBSCRIPTION_URL mysql2://user:pass@host/database;
 */
 
 // get environment variables
