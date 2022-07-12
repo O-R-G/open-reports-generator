@@ -110,12 +110,20 @@ function db_connect($remote_user) {
 	return $db;
 }
 
-$vars = array("name1", "deck", "body", "notes",  "url", "rank", "begin", "end");
+$vars = array("name1", "name2", "address1", "city", "state", "zip", "country", "phone", "email", "deck", "body", "notes",  "url", "rank", "begin", "end");
 
 $var_info = array();
 
 $var_info["input-type"] = array();
 $var_info["input-type"]["name1"] = "text";
+$var_info["input-type"]["name2"] = "text";
+$var_info["input-type"]["address1"] = "text";
+$var_info["input-type"]["city"] = "text";
+$var_info["input-type"]["state"] = "text";
+$var_info["input-type"]["zip"] = "text";
+$var_info["input-type"]["country"] = "text";
+$var_info["input-type"]["phone"] = "text";
+$var_info["input-type"]["email"] = "text";
 $var_info["input-type"]["deck"] = "textarea";
 $var_info["input-type"]["body"] = "textarea";
 $var_info["input-type"]["notes"] = "textarea";
@@ -125,10 +133,18 @@ $var_info["input-type"]["url"] = "text";
 $var_info["input-type"]["rank"] = "text";
 
 $var_info["label"] = array();
-$var_info["label"]["name1"] = "Name";
+$var_info["label"]["name1"] = "First Name";
+$var_info["label"]["name2"] = "Last Name";
+$var_info["label"]["address1"] = "Address";
+$var_info["label"]["city"] = "City";
+$var_info["label"]["state"] = "State";
+$var_info["label"]["zip"] = "Zip";
+$var_info["label"]["country"] = "Country";
+$var_info["label"]["phone"] = "Phone";
+$var_info["label"]["email"] = "Email";
 $var_info["label"]["deck"] = "Synopsis";
 $var_info["label"]["body"] = "Detail";
-$var_info["label"]["notes"] = "Notes";
+$var_info["label"]["notes"] = "TXN ID";
 $var_info["label"]["begin"] = "Begin";
 $var_info["label"]["end"] = "End";
 $var_info["label"]["url"] = "URL Slug";
