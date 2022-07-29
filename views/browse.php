@@ -84,7 +84,6 @@
 								$url .= $uu->urls()."/";
 							$url .= $c["url"];
 							$c_name = $c["name1"];
-							if(isset($c["name2"]) && !empty($c["name2"])) $c_name .=  ' ' . $c["name2"];
 
 							?><div class="child">
 								<span><? echo $j_pad; ?></span>
@@ -114,7 +113,6 @@
 						$url.= $uu->urls()."/";
 					$url.= $c["url"];
 					$c_name = $c["name1"];
-							if(isset($c["name2"]) && !empty($c["name2"])) $c_name .=  ' ' . $c["name2"];
 					// var_dump($c);
 					?><div class="child">
 						<span><? echo $j_pad; ?></span>

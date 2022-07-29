@@ -110,13 +110,12 @@ function db_connect($remote_user) {
 	return $db;
 }
 
-$vars = array("name1", "name2", "address1", "city", "state", "zip", "country", "phone", "email", "deck", "body", "notes",  "url", "rank", "begin", "end");
+$vars = array("name1", "address1", "city", "state", "zip", "country", "phone", "email", "deck", "body", "notes",  "url", "rank", "begin", "end");
 
 $var_info = array();
 
 $var_info["input-type"] = array();
 $var_info["input-type"]["name1"] = "text";
-$var_info["input-type"]["name2"] = "text";
 $var_info["input-type"]["address1"] = "text";
 $var_info["input-type"]["city"] = "text";
 $var_info["input-type"]["state"] = "text";
@@ -133,8 +132,7 @@ $var_info["input-type"]["url"] = "text";
 $var_info["input-type"]["rank"] = "text";
 
 $var_info["label"] = array();
-$var_info["label"]["name1"] = "First Name";
-$var_info["label"]["name2"] = "Last Name";
+$var_info["label"]["name1"] = "Name";
 $var_info["label"]["address1"] = "Address";
 $var_info["label"]["city"] = "City";
 $var_info["label"]["state"] = "State";

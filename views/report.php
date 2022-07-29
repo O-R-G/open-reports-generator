@@ -11,7 +11,7 @@
 		$csv = "";
 
 		while ($myrow = $result->fetch_assoc())
-			$csv .= $myrow['name1'] . "," . $myrow['name2'] . ",". $myrow['address1'] . "," . $myrow['city'] . "," . $myrow['state'] . "," . $myrow['zip']. "," . $myrow['country'];
+			$csv .= $myrow['name1'] . ",". $myrow['address1'] . "," . $myrow['city'] . "," . $myrow['state'] . "," . $myrow['zip']. "," . $myrow['country'];
 		
 		echo $csv;
 		exit();
@@ -95,7 +95,7 @@
 		foreach($items as $key => $myrow){
 
 			$html .= "<tr style='background-color:#" . (($key % 2) ? "E9E9E9" : "EFEFEF") . ";'>";
-			$html .= "<td>" . $myrow['name1'] . " " . $myrow['name2'] . "</td>";
+			$html .= "<td>" . $myrow['name1'] . "</td>";
 			$html .= "<td>" . $myrow['address1'] . "<br />" . $myrow['city'] . " " . $myrow['state'] . " " . $myrow['zip'] . "<br />" . $myrow['country'] . "</td>";
 			$html .= "<td>" . $myrow['email'] . "</td>";
 			$html .= "<td>" . date("Y M j", strToTime($myrow['begin'])) . "<br />" . date("Y M j", strToTime($myrow['end'])) . "</td>";
